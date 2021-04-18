@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ItunesSearch" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryVariant">@color/backGroundColorDark</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorPrimaryDark</item>
+        <item name="colorSecondaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="fontFamily">@font/gilroy</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="background_color">@color/backGroundColorDark</item>
+        <item name="text_color">@color/textColorDark</item>
+        <item name="search_color">#080808</item>
+        <item name="icon_tint_color">#f4f4f4</item>
+    </style>
+</resources>

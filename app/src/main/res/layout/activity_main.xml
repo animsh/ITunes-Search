@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.animsh.itunessearch.viewmodels.MainViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/background_color"
+        tools:context=".ui.fragments.recipes.RecipesFragment">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="20dp"
+            android:alpha="0.5"
+            android:text="Search Here!"
+            android:textAlignment="center"
+            android:textColor="?attr/text_color"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:drawableTopCompat="@drawable/ic_search" />
+
+        <com.todkars.shimmer.ShimmerRecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/background_color"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:shimmer_recycler_item_count="6"
+            app:shimmer_recycler_layout="@layout/layout_item_container_placeholder"
+            app:spanCount="2" />
+
+
+    </FrameLayout>
+</layout>
